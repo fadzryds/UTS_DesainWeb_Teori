@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Joki Tugas</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">JokiTugas</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="joki.html">Pesan Joki</a></li>
+        <li><a href="testimoni.html">Testimoni</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburgerMenu">
+        &#9776;
+      </div>
+    </nav>
+  </header>
+
+  <section class="joki-section">
+  <section class="pesan-joki">
+    <h2>Pesan Joki Tugas</h2>
+    <p>Pilih tingkat pendidikan dan deskripsi tugas yang ingin Anda pesan. Kami akan membantu Anda menyelesaikan tugas dengan kualitas terbaik!</p>
+    <form id="formJoki" class="form-pesan">
+      <label for="tingkat">Tingkat Pendidikan:</label>
+      <select id="tingkat" required>
+        <option value="SMP">SMP</option>
+        <option value="SMA">SMA</option>
+        <option value="Kuliah">Kuliah</option>
+        <option value="Kerja">Kerja</option>
+      </select>
+
+      <label for="deskripsi">Deskripsi Tugas:</label>
+      <textarea id="deskripsi" rows="4" placeholder="Masukkan detail tugas Anda..." required></textarea>
+
+      <h3>Benefit yang Anda Dapatkan:</h3>
+      <ul class="benefit-list">
+        <li>Tugas dikerjakan sesuai deadline</li>
+        <li>Hasil tugas berkualitas dan profesional</li>
+        <li>Harga terjangkau dengan kualitas terbaik</li>
+        <li>Dukungan 24/7 untuk pertanyaan dan revisi</li>
+      </ul>
+
+      <button type="button" onclick="pesanJoki()">Pesan Jasa via WhatsApp</button>
+    </form>
+  </section>
+</section>
+  
+<footer class="footer">
+  <p>&copy; 2024 JokiTugas - Ujian Tengah Semester Desain Web</p>
+  <p>Dibuat Oleh <a href="www.instagram.com/fdzryds">fadzry dewa</a></p>
+</footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

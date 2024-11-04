@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimoni Pelanggan</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">JokiTugas</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="joki.html">Pesan Joki</a></li>
+        <li><a href="testimoni.html">Testimoni</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburgerMenu">
+        &#9776;
+      </div>
+    </nav>
+  </header>
+  <section class="testimoni-section">
+  <section class="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+
+    <div class="form-komentar">
+      <h3>Tambahkan Komentar Anda</h3>
+      <form id="formKomentar">
+        <div class="profil-bintang">
+          <img src="assets/img/about.png" alt="Foto Profil" class="foto-profil">
+          
+          <div class="rating-bintang">
+            <input type="radio" id="bintang5" name="rating" value="5"><label for="bintang5">★</label>
+            <input type="radio" id="bintang4" name="rating" value="4"><label for="bintang4">★</label>
+            <input type="radio" id="bintang3" name="rating" value="3"><label for="bintang3">★</label>
+            <input type="radio" id="bintang2" name="rating" value="2"><label for="bintang2">★</label>
+            <input type="radio" id="bintang1" name="rating" value="1"><label for="bintang1">★</label>
+          </div>
+        </div>
+  
+        <textarea id="komentar" rows="4" placeholder="Masukkan komentar Anda..." required></textarea>
+        <button type="button" onclick="submitKomentar()">Kirim Komentar</button>
+      </form>
+    </div>
+
+    <div class="komentar">
+      <p>"Layanan joki tugas yang sangat membantu! Hasilnya cepat dan berkualitas. Terima kasih banyak!" - Budi</p>
+      <p>"Sangat profesional dan sesuai deadline. Pasti akan pesan lagi!" - Siti</p>
+      <p>"Harga terjangkau dan hasilnya sangat memuaskan. Direkomendasikan!" - Andi</p>
+    </div>
+
+    <div class="video-review">
+      <h3>Review dari Pelanggan Kami</h3>
+      <div class="video-wrapper">
+        <iframe id="reviewVideo" width="560" height="315" src="https://youtu.be/_ZdRaVJKCFI?si=dbmdk0jIOR3Iw4Ky" frameborder="0" allowfullscreen></iframe>
+        <button onclick="playVideo()" class="btn-play">Play</button>
+      </div>
+    </div>
+  </section>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2024 JokiTugas - Ujian Tengah Semester Desain Web</p>
+  <p>Dibuat Oleh <a href="www.instagram.com/fdzryds">fadzry dewa</a></p>
+</footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
